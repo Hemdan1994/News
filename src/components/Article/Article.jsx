@@ -8,9 +8,7 @@ function Article({ article }) {
   return (
     <Col className="col-lg-4 col-sm-6" key={article?.id}>
       <Card className="my-3">
-        {article?.metadata?.url && (
-          <Card.Img variant="top" src={article?.metadata?.url} />
-        )}
+        
         <Card.Body>
           <Card.Title>{article?.title}</Card.Title>
           <span> Type: {article?.subsection}</span>
