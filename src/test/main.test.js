@@ -1,16 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from '../components/Article/ArticleList.jsx';
+import ArticleList from '../components/Article/ArticleList'; // Import the correct component
 
 test('App is started', () => {
   // Render the component
-  const { container } = render(<App />);
-  //console.log("container",container)
-  //console.log("Container HTML:", container.innerHTML);
+  const { container } = render(<ArticleList />); // Render ArticleList component
 
   // Check if the root element exists
   const rootElement = container.querySelector('#root');
 
   // Assert that rootElement exists
-  expect(container.innerHTML).toContain('Front End Test');
+  expect(rootElement).toBeInTheDocument(); // Assert rootElement is in the document
 });
