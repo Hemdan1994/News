@@ -11,3 +11,4 @@ News Article Documentation
     2.1 - Run 'yarn install'
     2.2 - Run 'yarn dev' to run the project
     2.3 - Run 'yarn test' to run Jest tests
+    2.4 - Run 'yarn cypress open' to open Cypress
